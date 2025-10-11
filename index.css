@@ -1,0 +1,160 @@
+/* ==========================
+   Global Reset & Fonts
+========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffafc;
+  color: #4a3563;
+  line-height: 1.6;
+}
+
+/* ==========================
+   Links
+========================== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #ff4081;
+}
+
+/* ==========================
+   Headings
+========================== */
+h1, h2, h3, h4, h5, h6 {
+  color: #4a3563;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+h1 { font-size: 48px; }
+h2 { font-size: 36px; }
+h3 { font-size: 26px; }
+
+/* ==========================
+   Buttons
+========================== */
+button, .btn, .cta-button {
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover, .cta-button:hover {
+  transform: scale(1.05);
+}
+
+/* ==========================
+   Sections & Containers
+========================== */
+section {
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ==========================
+   Typography
+========================== */
+p {
+  font-size: 18px;
+  color: #634d4d;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 { font-size: 32px; }
+  h2 { font-size: 28px; }
+  h3 { font-size: 22px; }
+  p { font-size: 16px; }
+}
+
+/* ==========================
+   Animations
+========================== */
+.fadeIn {
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ==========================
+   Utility Classes
+========================== */
+.text-center {
+  text-align: center;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+/* ==========================
+   Footer
+========================== */
+.footer-section {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.footer-section a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #ff4081;
+}
+
+/* ==========================
+   Navbar
+========================== */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar a {
+  color: #5a4a6b;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ff4081;
+}
+
+/* ==========================
+   Cards
+========================== */
+.service-card, .about-video {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover, .about-video:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
